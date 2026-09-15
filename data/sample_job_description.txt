@@ -1,0 +1,7 @@
+We are looking for an enthusiastic Artificial Intelligence and Machine Learning student.
+
+Required Skills:
+Python, Machine Learning, Data Science, SQL, NumPy, Pandas, Scikit-learn, Git, GitHub, Problem Solving and Communication.
+
+Responsibilities:
+Develop machine learning models, preprocess data, analyze datasets, create projects and collaborate with team members.
