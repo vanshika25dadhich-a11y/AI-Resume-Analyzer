@@ -95,7 +95,7 @@ Vanshika Dadhich
 Integrated M.Tech in Artificial Intelligence  
 VIT Bhopal University
 
-## 📚 References
+##  References
 
 - Python Documentation
 - Streamlit Documentation
