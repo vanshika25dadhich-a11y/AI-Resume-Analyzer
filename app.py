@@ -5,12 +5,12 @@ import re
 # ---------------- PAGE CONFIG ----------------
 st.set_page_config(
     page_title="AI Resume Analyzer",
-    page_icon="📄",
+    page_icon=" ",
     layout="centered"
 )
 
 # ---------------- TITLE ----------------
-st.title("📄 AI Resume Analyzer")
+st.title(" AI Resume Analyzer")
 st.write("Upload your resume and get a quick AI-based analysis.")
 
 # ---------------- SKILLS DATABASE ----------------
@@ -154,9 +154,9 @@ uploaded_file = st.file_uploader(
 
 if uploaded_file is not None:
 
-    st.success("Resume uploaded successfully! ✅")
+    st.success("Resume uploaded successfully!")
 
-    if st.button("🔍 Analyze Resume"):
+    if st.button("Analyze Resume"):
 
         with st.spinner("Analyzing your resume..."):
 
@@ -165,23 +165,23 @@ if uploaded_file is not None:
             score = calculate_score(resume_text, found_skills)
             suggestions = generate_suggestions(resume_text, found_skills)
 
-        st.subheader("📊 Resume Analysis")
+        st.subheader("Resume Analysis")
 
         st.metric("Resume Score", f"{score}/100")
 
-        st.subheader("🛠️ Skills Detected")
+        st.subheader("Skills Detected")
 
         if found_skills:
             st.write(", ".join(found_skills))
         else:
             st.warning("No predefined skills detected.")
 
-        st.subheader("💡 Suggestions")
+        st.subheader("Suggestions")
 
         for suggestion in suggestions:
             st.write("• " + suggestion)
 
-        st.subheader("💼 Job Role Matching")
+        st.subheader("Job Role Matching")
 
         selected_role = st.selectbox(
             "Select a job role",
@@ -209,5 +209,5 @@ if uploaded_file is not None:
             st.progress(match_percentage / 100)
             st.write(f"Job Match: {match_percentage}%")
 
-        with st.expander("📃 View Extracted Resume Text"):
+        with st.expander("View Extracted Resume Text"):
             st.text(resume_text)
